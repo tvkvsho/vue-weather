@@ -23,7 +23,7 @@ export default {
     &__black-box{
       display: block;
       background: black;
-      opacity: 20%;
+      opacity: 0%;
       height: 100vh;
       position: fixed;
       width: 100%;
