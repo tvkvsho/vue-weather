@@ -188,6 +188,11 @@ const removeCity = () => {
     grid-template-columns: 30% 67%;
     gap: 40px;
 
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     &__h1{
       font-size: 3vw;
       font-weight: bold;
@@ -209,6 +214,10 @@ const removeCity = () => {
       backdrop-filter: blur(35px);
       border-radius: 16px;
       align-self: baseline;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     &__main-t{
@@ -229,6 +238,10 @@ const removeCity = () => {
     &__box{
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     &__hourly{
