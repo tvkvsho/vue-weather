@@ -194,12 +194,20 @@ const removeCity = () => {
     }
 
     &__h1{
-      font-size: 3vw;
+      font-size: 50px;
       font-weight: bold;
+
+      @media (max-width: 425px) {
+        font-size: 32px;
+      }
     }
 
     &__sub-t{
-      font-size: 1vw;
+      font-size: 20px;
+
+      @media (max-width: 425px) {
+        font-size: 16px;
+      }
     }
 
     &__banner{
@@ -221,11 +229,19 @@ const removeCity = () => {
     }
 
     &__main-t{
-      font-size: 8vw;
+      font-size: 128px;
+      
+      @media (max-width: 425px) {
+        font-size: 64px;
+      }
     }
 
     &__feels-like{
-      font-size: 1vw;
+      font-size: 20px;
+
+      @media (max-width: 425px) {
+        font-size: 16px;
+      }
     }
 
     &__remove-city{
