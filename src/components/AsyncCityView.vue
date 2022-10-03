@@ -187,6 +187,7 @@ const removeCity = () => {
     display: grid;
     grid-template-columns: 30% 67%;
     gap: 40px;
+    padding-bottom: 40px;
 
     @media (max-width: 768px) {
       display: flex;
@@ -225,6 +226,7 @@ const removeCity = () => {
 
       @media (max-width: 768px) {
         width: 100%;
+        background: rgba(255, 255, 255, 0.3);
       }
     }
 
@@ -266,6 +268,10 @@ const removeCity = () => {
       border-radius: 16px;
       margin: 0 auto 40px;
 
+      @media (max-width: 768px) {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
       &-h2{
         font-size: 32px;
       }
@@ -279,6 +285,10 @@ const removeCity = () => {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(100px);
       border-radius: 16px;
+
+      @media (max-width: 768px) {
+        background: rgba(255, 255, 255, 0.3);
+      }
 
       &-h2{
         font-size: 32px;

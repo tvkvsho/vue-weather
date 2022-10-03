@@ -28,6 +28,12 @@ export default {
       position: fixed;
       width: 100%;
       z-index: -2;
+
+      @media (max-width: 768px) {
+        background: rgb(0,159,255);
+        background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(155,228,255,1) 100%);
+        opacity: 100%;
+      }
     }
 
     &__video{
@@ -36,6 +42,10 @@ export default {
       max-width: fit-content;
       z-index: -3;
       transform: scale(1.3);
+
+      @media(max-width: 768px) {
+        display: none;
+      }
     }
   }
 </style>
