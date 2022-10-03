@@ -18,6 +18,7 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 import CityCard from "./CityCard.vue";
 
+// GET CITIES
 const savedCities = ref([]);
 const getCities = async () => {
   if (localStorage.getItem("savedCities")) {

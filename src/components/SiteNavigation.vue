@@ -68,6 +68,7 @@ import { uid } from "uid";
 import { ref } from "vue";
 import BaseModal from "./BaseModal.vue";
 
+// ADD CITY FUNCTION
 const savedCities = ref([]);
 const route = useRoute();
 const router = useRouter();
@@ -78,6 +79,7 @@ const addCity = () => {
     );
   }
 
+  // OBJECT WITH SAVED CITIES
   const locationObj = {
     id: uid(),
     state: route.params.state,
@@ -88,6 +90,7 @@ const addCity = () => {
     },
   };
 
+  // PUSH TO SAVED-CITIES
   savedCities.value.push(locationObj);
   localStorage.setItem(
     "savedCities",
@@ -100,6 +103,7 @@ const addCity = () => {
   router.replace({ query });
 };
 
+// MODAL WINDOW
 const modalActive = ref(null);
 const toggleModal = () => {
   modalActive.value = !modalActive.value;

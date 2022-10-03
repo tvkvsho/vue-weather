@@ -71,6 +71,7 @@ const previewCity = (searchResult) => {
   });
 };
 
+// SEARCH BY CITY OR STATE
 const mapboxAPIKey =
   "pk.eyJ1Ijoiam9obmtvbWFybmlja2kiLCJhIjoiY2t5NjFzODZvMHJkaDJ1bWx6OGVieGxreSJ9.IpojdT3U3NENknF6_WhR2Q";
 const searchQuery = ref("");
@@ -78,6 +79,7 @@ const queryTimeout = ref(null);
 const mapboxSearchResults = ref(null);
 const searchError = ref(null);
 
+// GET SEARCH RESULTS
 const getSearchResults = () => {
   clearTimeout(queryTimeout.value);
   queryTimeout.value = setTimeout(async () => {
