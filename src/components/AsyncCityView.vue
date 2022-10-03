@@ -215,6 +215,7 @@ const removeCity = () => {
       background: rgba(255, 255, 255, 0.3);
       backdrop-filter: blur(35px);
       z-index: 1;
+      transform: translate(0px, -40px);
     }
 
     &__overview{
